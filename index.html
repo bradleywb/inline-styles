@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>JQuery Style Inliner</title>
+	<style>
+	.myClass {
+        font-family: "my font";
+		height: 100px;
+		width: 100px;
+		background-color: red;
+		border: 1px solid black;
+	}
+
+    .myClass {
+        border: 2px solid black;
+    }
+
+    .myOtherClass {
+        border: 4px solid black !important;
+    }
+	</style>
+</head>
+<body>
+	<div class="myClass myOtherClass" style="border:3px solid black !important;"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="inlineStyles.js"></script>
+</body>
+</html>
